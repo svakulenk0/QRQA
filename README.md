@@ -1,11 +1,17 @@
 # QRQA
 
-Error analysis using question rewrites for conversational question answering.
+Error analysis using question rewrites for conversational question answering. Supplementary materials for "A Wrong Answer or a Wrong Question?.." https://www.aclweb.org/anthology/2020.scai-1.2.pdf
 
 ## Requirements
 
 * altair
 * rouge_score
+
+## Input
+
+query_metrics file is generated from a TREC run file using:
+
+`grep '^map\s\|recip_rank\|^P_1\|^P_3\|ndcg_cut_1\|ndcg_cut_3\|ndcg_cut_5' original.run | grep -v "all" > original_query_metrics.txt`
 
 ## Citation
 
